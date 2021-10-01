@@ -1,0 +1,56 @@
+1
+Frodo Baggins
+2
+Sam Gamgee
+3
+Gandalf
+4
+Legolas Greenleaf
+5
+Gimli
+6
+Aragorn II Elessar
+7
+Boromir
+8
+Merry Brandybuck
+9
+Pippin Took
+10
+Treebeard
+11
+Theoden the King of Rohan
+12
+Galadriel
+13
+Chaos Undivided
+14
+Khorne
+15
+Nurgle
+16
+Tzeench
+17
+Slaanesh
+18
+Johnny
+19
+Slon
+20
+Crimson
+21
+Strory
+22
+Goblin
+23
+Anton Lustberg
+24
+Kind Olmer
+25
+The Chained Holy Father of Bulgaria
+26
+Booze
+27
+Vodka
+28
+Beer

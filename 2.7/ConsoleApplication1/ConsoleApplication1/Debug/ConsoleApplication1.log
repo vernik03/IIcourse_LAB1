@@ -1,0 +1,8 @@
+﻿  ConsoleApplication1.cpp
+D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(44,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(50,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(214,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(223,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(250,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(259,21): warning C4018: <: несоответствие типов со знаком и без знака
+  ConsoleApplication1.vcxproj -> D:\Programming\Visual Studio\repos\2course_lab1\lab2\ConsoleApplication1\Debug\ConsoleApplication1.exe

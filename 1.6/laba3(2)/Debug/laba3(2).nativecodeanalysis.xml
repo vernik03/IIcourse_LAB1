@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+      <FILENAME>laba3(2).cpp</FILENAME>
+      <LINE>209</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "tmp". </DESCRIPTION>
+    <FUNCTION>merge</FUNCTION>
+    <DECORATED>?merge@@YAPAUnode@@PAU1@@Z</DECORATED>
+    <FUNCLINE>175</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>176</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>178</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>192</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>193</LINE>
+        <COLUMN>37</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>195</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>196</LINE>
+        <COLUMN>30</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>198</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>200</LINE>
+        <COLUMN>32</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>202</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>205</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>206</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>207</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>208</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"tmp" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Programming\Visual Studio\repos\laba3(2)\laba3(2)\</FILEPATH>
+        <FILENAME>laba3(2).cpp</FILENAME>
+        <LINE>209</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"tmp" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
