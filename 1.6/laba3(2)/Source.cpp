@@ -36,7 +36,7 @@ struct edge_pair
     Vertex line[2];
 };
 
-struct node {
+class node {
 private:
     int size;      
     int key[3];

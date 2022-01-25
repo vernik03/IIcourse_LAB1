@@ -40,8 +40,6 @@ struct book_info
     
 };
 
-
-
 void add_character(character_info character)
 {
    
@@ -71,20 +69,7 @@ void add_character(character_info character)
     }
     in.close();
     ofstream out;
-   /* FILE* fp = fopen("../character.dat", "rb");
-    fseek(fp, 0, SEEK_END);
-    long pos = ftell(fp);
-    fseek(fp, 0, SEEK_SET);
-    int count = pos / sizeof(character_info);
-    character_info* part = new character_info[count];
-    fread(part, sizeof(character_info), count, fp);*/
-   /* for (int i = 0; i < count; i++)
-        if (part[i].name != character.name)
-        {
-            flag = true;
-        }
-    delete[] part;
-    fclose(fp);*/
+  
     if (!flag)
     {
         
@@ -98,12 +83,12 @@ void add_character(character_info character)
             out << character.id << endl;
             out << character.name << endl;
             out.close();
-       /* fwrite(&character, sizeof(character), 1, fp);
-        fclose(fp);*/
+      
     }
 
   
 }
+
 
 int character_id(character_info character)
 {
@@ -131,11 +116,6 @@ int character_id(character_info character)
         id_in_int = atoi(id_in);
         in.getline(name_in, 256);
     }
- 
-    
-   
-    
-  
 }
 
 void add_book()
@@ -159,18 +139,7 @@ void add_book()
     book_info elem;
     ofstream out;
     out.open("../book.txt", std::ios::app);
-    /*FILE* fp = fopen("../book.dat", "rb");
-    fseek(fp, 0, SEEK_END);
-    long pos = ftell(fp);
-    if (pos > 0)
-    {
-        fseek(fp, pos - sizeof(book_info), SEEK_SET);
-        fread(&elem, sizeof(elem), 1, fp);
-        id = elem.id + 1;
-    }
-    fclose(fp);
-    fp = fopen("../book.dat", "ab");
-    fseek(fp, 0, SEEK_END);*/
+   
     while (true)
     {
         elem.id = id;
@@ -258,163 +227,12 @@ void add_book()
         }
         out << "@" << endl;;
         out.close();
-        //fwrite(&elem, sizeof(elem), 1, fp);
         break;
         
     }
     
 }
 
-
-
-
-
-
-
-//void add_payment(float payment,unsigned int id)
-//{
-//    character_info elem;
-//    FILE* fp = fopen("../client.dat", "rb");
-//    fp = fopen("../client.dat", "rb");
-//    fseek(fp, 0, SEEK_END);
-//    long pos = ftell(fp);
-//    fseek(fp, 0, SEEK_SET);
-//    int count = pos / sizeof(character_info);
-//    character_info* tmp = new character_info[count];
-//    fread(tmp, sizeof(character_info), count, fp);
-//    for (int i = 0; i < count; i++)
-//    {
-//
-//        if (i == id)
-//        {   
-//            tmp[i].payment=payment;
-//        } 
-//        
-//    }       
-//    fclose(fp);
-//
-//    fp = fopen("../client.dat", "wb");
-//    fseek(fp, 0, SEEK_END);
-//    for (int i = 0; i < count; i++)
-//    {
-//        fwrite(&tmp[i], sizeof(elem), 1, fp);
-//    }
-//   
-//    
-//    
-//    
-//}
-
-//character_info login_user()
-//{
-//    unsigned int id = 0;
-//    character_info elem;
-//    FILE* fp = fopen("../client.dat", "rb");
-//    fp = fopen("../client.dat", "rb");
-//    fseek(fp, 0, SEEK_END);
-//    cout << "Enter a login: ";
-//    cin >> elem.login;
-//    //strcat(elem.login, "\0");
-//    cout << "Enter a password: ";
-//    cin >> elem.password;
-//
-//    fseek(fp, 0, SEEK_END);
-//    long pos = ftell(fp);
-//    fseek(fp, 0, SEEK_SET);
-//    int count = pos / sizeof(character_info);
-//    character_info* tmp = new character_info[count];
-//    fread(tmp, sizeof(character_info), count, fp);
-//    for (int i = 0; i < count; i++)
-//    {
-//        //strcat(tmp[i].login, "\0");
-//        if (strcmp(tmp[i].login, elem.login) == 0 && strcmp(tmp[i].password, elem.password) == 0)
-//        {
-//            
-//            /*client_info* ans = new client_info;
-//            ans->id = elem.id;
-//            strcpy(ans->name, elem.name);
-//            strcpy(ans->surname, elem.surname);
-//            ans->payment = elem.payment;
-//            cout << elem.name<<" "<< tmp[i].name << " " << ans->name << endl;*/
-//            return tmp[i];
-//        }
-//        
-//    }
-//    fclose(fp);    
-//    character_info ans;
-//    ans.id = -1;
-//    return ans;
-//        
-//
-//}
-
-//book_info tour(unsigned int id)
-//{
-//    
-//    book_info elem;
-//    FILE* fp = fopen("../tour.dat", "rb");
-//    fp = fopen("../tour.dat", "rb");  
-//    fseek(fp, 0, SEEK_END);
-//    long pos = ftell(fp);
-//    fseek(fp, 0, SEEK_SET);
-//    int count = pos / sizeof(book_info);
-//    book_info* tmp = new book_info[count];
-//    fread(tmp, sizeof(book_info), count, fp);
-//    for (int i = 0; i < count; i++)
-//    {
-//        
-//        if (i == id)
-//        {            
-//            return tmp[i];
-//        }
-//
-//    }
-//    fclose(fp);
-//    book_info ans;
-//    ans.id = -1;
-//    return ans;
-//
-//
-//}
-
-//void read_all_characters()
-//{
-//    FILE* fp = fopen("../charater.dat", "rb");
-//    fseek(fp, 0, SEEK_END);
-//    long pos = ftell(fp);
-//    fseek(fp, 0, SEEK_SET);
-//    int count = pos / sizeof(character_info);
-//    character_info* part = new character_info[count];
-//    fread(part, sizeof(character_info), count, fp);
-//    for (int i = 0; i < count; i++)
-//        cout << " Name: " << part[i].name << endl;
-//    delete[] part;
-//    fclose(fp);
-//}
-
-
-//character_info find_character_by_id(int book)
-//{
-//
-//    FILE* fp = fopen("../character.dat", "rb");
-//    fseek(fp, 0, SEEK_END);
-//    long pos = ftell(fp);
-//    fseek(fp, 0, SEEK_SET);
-//    int count = pos / sizeof(character_info);
-//    character_info* part = new character_info[count];
-//    fread(part, sizeof(character_info), count, fp);
-//    character_info name;
-//    for (int i = 0; i < count; i++)
-//    {
-//        if (part[i].id != book)
-//        {
-//            return part[i];
-//        }
-//    }
-//    delete[] part;
-//    fclose(fp);
-//
-//}
 
 void write_book(book_info input_book) {
     unsigned int id = 0;
@@ -1053,34 +871,8 @@ int find(char input[256])
             cout << endl;
 
 
-           /* for (int i = 0; i < elem.characters.size(); i++)
-            {
-                ifstream in_ch;
-                in_ch.open("../character.txt");
-                char id_in[20];
-                char name_in[256];
-
-                while (!in_ch.eof())
-                {
-                    in_ch.getline(id_in, 20);
-                    int id_in_int = atoi(id_in);
-                    in_ch.getline(name_in, 256);
-
-                    if (id_in_int == elem.characters[i].character_id)
-                    {
-                        cout << name_in << endl;
-
-
-                    }
-
-                }
-                in_ch.close();
-
-            }
-
-            cout << endl;*/
-            in.close();
-            return 0;
+          //  in.close();
+            //return 0;
 
         }
         in.getline(chars, 50);
@@ -1091,30 +883,6 @@ int find(char input[256])
     }
     in.close();
     return 1;
-
-    /*SetConsoleOutputCP(1251);
-    FILE* fp = fopen("../book.dat", "rb");
-    fseek(fp, 0, SEEK_END);
-    long pos = ftell(fp);
-    fseek(fp, 0, SEEK_SET);
-    int count = pos / sizeof(book_info);
-    book_info* part = new book_info[count];
-    fread(part, sizeof(book_info), count, fp);
-    level_of_character temp_level;
-    for (int i = 0; i < count; i++) {
-        cout << "Title: " << part[i].title << " author: " << part[i].authors_name << " " << part[i].authors_surname << " Date of publication: " << part[i].date << " Number of pages: " << part[i].pages << endl;
-        for (int j = 0; j < part[i].characters.size(); j++)
-        {
-            temp_level = part[i].characters[j];
-            cout << temp_level.character_id;
-           // character_info temp_character = find_character_by_id(part[i].characters[j].character_id);//ОШИБКА
-           // cout << "   Name of character: " << temp_character.name << " Level: " << part[i].characters[j].level << endl;
-
-        }
-
-    }
-    delete[] part;
-    fclose(fp);*/
 }
 
 
@@ -1144,28 +912,7 @@ int main() {
     while (input_letter == 'F' || input_letter == 'f' || input_letter == 'E' || input_letter == 'e')
     {
 
-    
-  /*  while (EorF == 'L' || EorF == 'l')
-    {
-        elem = login_user();
-        EorF = '0';
-        if (elem.id == -1) {
-            cout << "Invalid login or password" << endl;
-            cout << "Press 'L' to try again or press 'R' to register" << endl;
-            cin >> EorF;
-            if (EorF == 'R' || EorF == 'r')
-            {
-                elem = add_book();
-                EorF = '0';
-                break;
-            }
-            else if (!(EorF == 'L' || EorF == 'l'))
-            {
-                cout << "Error. Invalid key" << endl;
-                return 1;
-            }
-        }
-    }*/
+   
 
         while (input_letter == 'E' || input_letter == 'e')
         {
@@ -1237,79 +984,6 @@ int main() {
             }
 
         }
-        /*char YorN, EorR;
-        float k;
-        cout << "Hello, " << elem.name << " " << elem.surname << "!" << endl;
-
-        do {
-            book_info t_el;
-            FILE* tt = fopen("../tour.dat", "rb");
-            do {
-                cout << "Now you can choose your tour:" << endl;
-
-                read_all_tours();
-                do
-                {
-
-            
-                cout << "\nEnter the number of the selected tour:" << endl;
-                cin >> t_el.id; 
-                if (t_el.id > 7)
-                {
-                    cout << "Invalid number. Try again" << endl;
-                }
-                } while (t_el.id > 7);
-                t_el = tour(t_el.id-1);
-                cout << "Your choice: '" << t_el.title << "'" << endl;
-                if (elem.payment >= 500 && elem.payment<1000)
-                {
-                    k = 0.03;
-                
-                }
-                else if (elem.payment >= 1000&& elem.payment<2000)
-                {
-                    k = 0.05; 
-                }
-                else if (elem.payment >= 2000&& elem.payment<2500 )
-                {
-                    k = 0.1;
-                }
-                else if (elem.payment >= 2500&& elem.payment<3000)
-                {
-                    k = 0.15;
-                }
-                else if (elem.payment >= 3000&& elem.payment<4000)
-                {
-                    k = 0.2; 
-                }
-                else if (elem.payment >= 4000)
-                {
-                    k = 0.3; 
-                }
-                else if(elem.payment<500)
-                {
-                    k = 0; 
-                }
-            
-          
-               // cout << "Your have " << t_el.price * (1 - k) << "\u20AC to pay" << endl;
-                cout << "Press 'Y' to confirm or press 'N' to cancel" << endl;
-                cin >> YorN;
-            } while (YorN == 'N'||YorN == 'n');
-            if (YorN == 'Y'|| YorN == 'y')
-            {       
-                //elem.payment = 0;
-               // elem.payment = elem.payment + t_el.price * (1 - k);
-            
-                cout << "Your discount is " << k * 100 << "%!" << endl;
-                add_payment(elem.payment, elem.id);
-
-            }
-            cout << "Press 'R' to order one more tour or press any key to exit"<< endl;
-            cin >> EorR;
-       
-        
-        } while (EorR == 'R'|| EorR == 'r');*/
         if (input_letter == 'F' || input_letter == 'f')
         {
             char input[256];
@@ -1376,7 +1050,3 @@ int main() {
     }
     return 0;
 }
-
-
-
-

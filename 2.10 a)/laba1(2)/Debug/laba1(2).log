@@ -1,20 +1,4 @@
-﻿  laba1(2).cpp
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(254,27): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(447,27): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(501,27): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(479,14): warning C4101: check: неиспользованная локальная переменная
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(557,23): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(629,23): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(588,14): warning C4101: check: неиспользованная локальная переменная
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(755,23): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(668,14): warning C4101: check: неиспользованная локальная переменная
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(819,27): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(792,14): warning C4101: check: неиспользованная локальная переменная
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(904,27): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(925,23): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(954,23): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(956,27): warning C4018: <: несоответствие типов со знаком и без знака
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(882,14): warning C4101: check: неиспользованная локальная переменная
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(1023,14): warning C4101: check: неиспользованная локальная переменная
-D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\laba1(2)\laba1(2).cpp(139): warning C4715: character_id: значение возвращается не при всех путях выполнения
-  laba1(2).vcxproj -> D:\Programming\Visual Studio\repos\2course_lab1\second_sem_lab1\Debug\laba1(2).exe
+﻿  Book.cpp
+D:\Programming\Visual Studio\repos\2course_lab1\2.10 a)\laba1(2)\Book.cpp(102): warning C4715: Book::GetCharacterLevel: значение возвращается не при всех путях выполнения
+D:\Programming\Visual Studio\repos\2course_lab1\2.10 a)\laba1(2)\Book.cpp(88): warning C4715: Book::GetCharacterLevel: значение возвращается не при всех путях выполнения
+  laba1(2).vcxproj -> D:\Programming\Visual Studio\repos\2course_lab1\2.10 a)\Debug\laba1(2).exe
